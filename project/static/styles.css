@@ -1,0 +1,97 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaf1f5; /* Light background color for the entire page */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+h1 {
+    color: #4a7c8c; /* Title color */
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #6c757d; /* Subtitle color */
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4a7c8c; /* Border color for the table */
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* Light border for table cells */
+}
+
+th {
+    background-color: #4a7c8c; /* Header background color */
+    color: #fff; /* Header text color */
+    font-weight: bold;
+}
+
+td {
+    background-color: #f1f1f1; /* Light gray background for table rows */
+    color: #333; /* Text color for table cells */
+}
+
+td a {
+    color: #2d6a4f; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 600; /* Bold link text */
+}
+
+td a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.source-code-container {
+    background-color: #f0f4f7; /* Light background for source code container */
+    border: 1px solid #ddd; /* Light border for source code container */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside the source code container */
+    margin: 0 auto; /* Center the container */
+    width: 80%; /* Width of the source code container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.source-code {
+    font-family: monospace; /* Monospace font for source code */
+    white-space: pre-wrap; /* Preserve whitespace in source code */
+    margin: 0;  /* Remove margin */
+    color: #333; /* Text color for source code */
+    text-align: left; /* Align text to the left */
+}
+
+.back-button {
+    display: inline-block; /* Inline block for button */
+    margin-top: 1em; /* Top margin */
+    padding: 10px 20px; /* Padding inside button */
+    background-color: #4a7c8c; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.back-button:hover {
+    background-color: #376057; /* Darker button color on hover */
+}

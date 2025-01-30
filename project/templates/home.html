@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plagiarism Detection for Coding Contest</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Plagiarism Detection for Coding Contest</h1>
+        <h2>Copied Submissions</h2>
+        <table class="copied-submissions-table">
+            <thead>
+                <tr>
+                    <th>Username 1</th>
+                    <th>Username 2</th>
+                    <th>Similarity Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for submission in copied_submissions %}
+                <tr>
+                    <td><a href="{{ url_for('details', username=submission[1]) }}">{{ submission[1] }}</a></td>
+                    <td><a href="{{ url_for('details', username=submission[2]) }}">{{ submission[2] }}</a></td>
+                    <td>{{ submission[3] | round(2) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
